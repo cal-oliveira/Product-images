@@ -1,3 +1,4 @@
+import ProductImage from '@/components/ProductImage/ProductImage'
 import Image from 'next/image'
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
 
   return (
     <div>
-      
+      <ProductImage name={product.name} imageUrls={product.imageUrls}/>
     </div>
   )
 }
