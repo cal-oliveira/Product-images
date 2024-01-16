@@ -1,4 +1,5 @@
 import ProductImage from '@/components/ProductImage/ProductImage'
+import ProductInfo from '@/components/ProductImage/ProductInfo'
 import Image from 'next/image'
 
 export default function Home() {
@@ -20,6 +21,13 @@ export default function Home() {
   return (
     <div>
       <ProductImage name={product.name} imageUrls={product.imageUrls}/>
+      <ProductInfo 
+        name={product.name}
+        available={product.available}
+        totalPrice={product.totalPrice}
+        basePrice={product.basePrice}
+        description={product.description}
+      />
     </div>
   )
 }
